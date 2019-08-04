@@ -78,6 +78,13 @@ ENUM_DW_TAG = dict(
     DW_TAG_type_unit                = 0x41,
     DW_TAG_rvalue_reference_type    = 0x42,
 
+    # Annotations
+    DW_TAG_annotation               = 0x1001,
+    DW_TAG_clause                   = 0x1002,
+    DW_TAG_var_wrapper              = 0x1003,
+    DW_TAG_at_expr                  = 0x1004,
+    DW_TAG_sema_var                 = 0x1005,
+
     DW_TAG_lo_user                  = 0x4080,
     DW_TAG_GNU_call_site            = 0x4109,
     DW_TAG_GNU_call_site_parameter  = 0x410a,
@@ -242,6 +249,14 @@ ENUM_DW_AT = dict(
     DW_AT_APPLE_property_attribute      = 0x3feb,
     DW_AT_APPLE_objc_complete_type      = 0x3fec,
     DW_AT_APPLE_property                = 0x3fed,
+
+    # Annotations
+    DW_AT_annotated_entity              = 0x3ff0,
+    DW_AT_expr                          = 0x3ff1,
+    DW_AT_var                           = 0x3ff2,
+    DW_AT_at                            = 0x3ff3,
+    DW_AT_from                          = 0x3ff4,
+    DW_AT_until                         = 0x3ff5,
 
     _default_ = Pass,
 )
